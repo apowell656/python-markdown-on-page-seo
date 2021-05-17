@@ -133,11 +133,11 @@ def main():
     # Some of SSGs (Static Site Generators) can use the contents of your first paragraph
     # as the meta description of your HTML document. The default is to check the first
     # paragraph for the focus keyword.
-    if args.front_matter == 'fm':
-        meta_description = first_paragraph[0: 160:]
+    #if args.front_matter == 'fm':
+    #    meta_description = first_paragraph[0: 160:]
     if args.front_matter == 'fm' and  args.desc_lookup:
         meta_description = front_matter[args.desc_lookup.lower()][0]        
-    elif args.front_matter == 'no_fm' and args.desc is not None:
+    elif args.front_matter == 'no_fm' and args.desc:
         meta_description = args.desc
     else:
         meta_description = first_paragraph[0: 160:]
