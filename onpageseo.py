@@ -135,12 +135,13 @@ def main():
     # paragraph for the focus keyword.
     if args.front_matter == 'fm':
         meta_description = first_paragraph[0: 160:]
-    elif args.front_matter == 'fm' and args.desc_lookup:
-        meta_description = md.Meta[args.desc_lookup.lower()][0]
-    elif args.desc:
+    if args.front_matter == 'fm' and  args.desc_lookup:
+        meta_description = front_matter[args.desc_lookup.lower()][0]        
+    elif args.front_matter == 'no_fm' and args.desc is not None:
         meta_description = args.desc
     else:
         meta_description = first_paragraph[0: 160:]
+
     meta_description_length = len(meta_description)
     focus_keyword_meta_description_placement = 'The focus keyword does not appear in the meta description.'
     meta_description_keyword_search = re.search(
