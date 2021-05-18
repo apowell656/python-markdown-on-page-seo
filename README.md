@@ -6,7 +6,7 @@ Requires Python 3+, Markdown 3.3.4, and BeautifulSoup4.
 
 ## Installation
 
-\`git clone git@github.com:apowell656/python-markdown-on-page-seo.git\`
+`git clone git@github.com:apowell656/python-markdown-on-page-seo.git`
 
 ## Command-line Usage
 
