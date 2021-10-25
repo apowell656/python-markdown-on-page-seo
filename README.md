@@ -35,7 +35,7 @@ Just like a markdown document without front matter, it will use the first paragr
 
 ```
 cd python-markdown-on-page-seo
-./onpageseo.py filename.md example.com fm tags --dl summary
+./onpageseo.py filename.md example.com fm tags -dl summary
 ```
 
 ## Sample Output
